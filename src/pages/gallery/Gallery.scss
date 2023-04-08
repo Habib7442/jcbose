@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@600&display=swap');
+
+.gallery{
+    width: 100vw;
+    height: 100%;
+    background-color: black;
+
+    .title{
+        text-align: center;
+        color: whitesmoke;
+        font-family: 'Alkatra', cursive;
+        padding-top: 1rem;
+    }
+
+    .carousel__div{
+        padding: 0 1rem;
+        
+        .carousel__img{
+            width: 100%;
+            height: 500px;
+        }
+    }
+
+    .cards__div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+
+        .card{
+            width: 18rem;
+            height: 100%;
+
+            .card__img{
+                padding: 10px;
+            }
+        }
+    }
+}
