@@ -17,7 +17,7 @@ const Contact = () => {
         <h4 className="schoolContact">Contact: 8750277834, 9101344868</h4>
         <h5>Email: jcbosejuniorcollege@gmail.com</h5>
         <div className="icon">
-            <a href="https://www.facebook.com/bisatktg2015?mibextid=ZbWKwL"><FacebookIcon /></a>
+            <a target="_blank" href="https://www.facebook.com/bisatktg2015?mibextid=ZbWKwL"><FacebookIcon /></a>
             <a href=""><InstagramIcon /></a>
             <a href=""><TwitterIcon /></a>
             <a href=""><YouTubeIcon /></a>

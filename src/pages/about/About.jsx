@@ -6,7 +6,7 @@ const About = () => {
     <div className="about">
       <h2>About Institute</h2>
       <p className="about__institute">
-        Profile J.C Bose Senior Secondary School, situated at Chowrangee,
+        J.C Bose Senior Secondary School, situated at Chowrangee,
         Katigorah- 788804 is one of the most promising institution of the
         Katigorah and also the entire Barak Valley imparting quality education
         at High School and Higher Secondary levels. The Senior Secondary School

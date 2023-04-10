@@ -91,6 +91,42 @@ const cardImg = [
     id: 23,
     img: "./img22.jfif",
   },
+  {
+    id: 24,
+    img: "./img23.jfif",
+  },
+  {
+    id: 25,
+    img: "./img24.jfif",
+  },
+  {
+    id: 26,
+    img: "./img25.jfif",
+  },
+  {
+    id: 27,
+    img: "./img26.jfif",
+  },
+  {
+    id: 28,
+    img: "./img27.jfif",
+  },
+  {
+    id: 29,
+    img: "./img28.jfif",
+  },
+  {
+    id: 30,
+    img: "./img29.jfif",
+  },
+  {
+    id: 31,
+    img: "./img30.jfif",
+  },
+  {
+    id: 32,
+    img: "./img31.jfif",
+  },
 ];
 
 export default cardImg;

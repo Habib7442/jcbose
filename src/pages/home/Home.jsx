@@ -1,8 +1,9 @@
 import { React } from "react";
 import "./Home.scss";
 import { Link } from "react-router-dom";
-import cardImg from "../../CardImg";
-import NewReleasesIcon from "@mui/icons-material/NewReleases";
+// import cardImg from "../../CardImg";
+import latestmg from "../../latestImg";
+// import NewReleasesIcon from "@mui/icons-material/NewReleases";
 
 const Home = () => {
   return (
@@ -33,6 +34,27 @@ const Home = () => {
             <div className="carousel-item">
               <img
                 src="./home.jfif"
+                className="d-block w-100 carousel__img"
+                alt="..."
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src="./img23.jfif"
+                className="d-block w-100 carousel__img"
+                alt="..."
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src="./img24.jfif"
+                className="d-block w-100 carousel__img"
+                alt="..."
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src="./img31.jfif"
                 className="d-block w-100 carousel__img"
                 alt="..."
               />
@@ -93,10 +115,16 @@ const Home = () => {
         </div>
       </div>
       <div className="slide-right">
-        <Link to="/admission"> <h3>Admission Open</h3> </Link>
-        <span>
+        <Link to="/admission">
+          {" "}
+          <h3>
+            ADMISSION OPEN FOR CLASS IX & HS<br/> FIRST YEAR (ARTS & COMMERCE) FOR
+            THE SESSION 2023-24
+          </h3>{" "}
+        </Link>
+        {/* <span>
           <NewReleasesIcon />
-        </span>
+        </span> */}
       </div>
       <div className="principal__message">
         <div className="left">
@@ -183,7 +211,7 @@ const Home = () => {
       </div>
       <h2 className="latest__picture">Latest Images of Institute and Events</h2>
       <div className="latest__img">
-        {cardImg.slice(0, 4).map((data) => (
+        {latestmg.map((data) => (
           <img src={data.img} key={data.id} alt="" />
         ))}
       </div>
