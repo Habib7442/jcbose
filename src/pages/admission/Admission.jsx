@@ -123,11 +123,13 @@ const Admission = () => {
           });
         });
       });
-      navigate("/");
+      // navigate("/");
       alert("Form submitted successfully.");
     } catch (error) {
       console.log(error.message);
     }
+
+    window.print();
   };
 
   console.log(profUrl);
@@ -135,7 +137,9 @@ const Admission = () => {
   return (
     <div className="admission container-fluid">
       <div className="inner__div">
-        <div className="mb-3">
+      <h4 style={{textAlign: "center", color: "darkBlue"}}>After Submission Print The Form & Bring The <br/> Hard Copy During Physical Verification</h4>
+
+        <div className="mb-3 my-4">
           <label className="file" htmlFor="file">
             Upload Image <span style={{ color: "red" }}>* required</span>
           </label>
@@ -511,3 +515,5 @@ const Admission = () => {
 };
 
 export default Admission;
+
+

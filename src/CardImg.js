@@ -63,68 +63,50 @@ const cardImg = [
     id: 16,
     img: "./img15.jfif",
   },
+  
   {
     id: 17,
-    img: "./img16.jfif",
-  },
-  {
-    id: 18,
-    img: "./img17.jfif",
-  },
-  {
-    id: 19,
-    img: "./img18.jfif",
-  },
-  {
-    id: 20,
-    img: "./img19.jfif",
-  },
-  {
-    id: 21,
     img: "./img20.jfif",
   },
+  
   {
-    id: 22,
-    img: "./img21.jfif",
-  },
-  {
-    id: 23,
+    id: 18,
     img: "./img22.jfif",
   },
   {
-    id: 24,
+    id: 19,
     img: "./img23.jfif",
   },
   {
-    id: 25,
+    id: 20,
     img: "./img24.jfif",
   },
   {
-    id: 26,
+    id: 21,
     img: "./img25.jfif",
   },
   {
-    id: 27,
+    id: 22,
     img: "./img26.jfif",
   },
   {
-    id: 28,
+    id: 23,
     img: "./img27.jfif",
   },
   {
-    id: 29,
+    id: 24,
     img: "./img28.jfif",
   },
   {
-    id: 30,
+    id: 25,
     img: "./img29.jfif",
   },
   {
-    id: 31,
+    id: 26,
     img: "./img30.jfif",
   },
   {
-    id: 32,
+    id: 27,
     img: "./img31.jfif",
   },
 ];

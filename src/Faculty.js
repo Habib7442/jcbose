@@ -12,7 +12,7 @@ const faculty = [
     qualification:
       "M.Com, MA(Eco), PGDCA, PGDHRM, B.Ed, LLB. Paper Published- 02",
     designation: "Guest Faculty of Commerce",
-    img: "./guest_faculty.png",
+    img: "./aah2.png",
   },
   {
     id: 3,

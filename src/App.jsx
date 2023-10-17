@@ -11,6 +11,9 @@ const Contact = lazy(() => import('./pages/contact/Contact'))
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import CircularProgress from "@mui/material/CircularProgress";
 import { v4 } from "uuid";
+import Achievements from './pages/achievements/Achievements';
+import AllReviews from './pages/allReviews/AllReviews';
+import CustomLoader from './components/customLoader/CustomLoader';
 
 
 
@@ -54,6 +57,14 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
       },
+      {
+        path: "/achievements",
+        element: <Achievements />,
+      },
+      {
+        path: "/allreviews",
+        element: <AllReviews />,
+      },
       
     ],
   },
@@ -63,16 +74,12 @@ function App() {
   return (
     <div className="app">
       <div>
-        <Suspense
-          fallback={
-            <div className="loading">
-              <CircularProgress /> <span>Loading...</span>
-            </div>
-          }
-        >
-          <RouterProvider router={router} />
-        </Suspense>
-      </div>
+      <Suspense
+        fallback={<CustomLoader />}
+      >
+        <RouterProvider router={router} />
+      </Suspense>
+    </div>
     </div>
   );
 }

@@ -1,69 +1,74 @@
 import React from "react";
-import "./Faculty.scss";
-import faculty from "../../Faculty";
-import nonTeaching from "../../NonTeaching";
+import FacultyData from "../../Faculty";
+import NonTeachingData from "../../NonTeaching";
 
 const Faculty = () => {
   return (
-    <div className="faculty">
-      <h1 className="teaching_staff">Teaching Staff</h1>
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Sl. No.</th>
-            <th scope="col">Name</th>
-            <th scope="col">Qualification Details</th>
-            <th scope="col">Designation</th>
-            <th scope="col">Image</th>
-          </tr>
-        </thead>
-        <tbody>
-          {faculty.map((data) => (
-            <tr key={data.id}>
-              <th scope="row">{data.id}</th>
-              <td className="faculty__name">{data.name}</td>
-              <td>{data.qualification}</td>
-              <td>{data.designation}</td>
-              <td>
-                <img
-                  style={{ width: "10rem", height: "10rem" }}
-                  src={data.img}
-                  alt=""
-                />
-              </td>
+    <div className=" bg-gray-200 p-8 shadow-md rounded-lg">
+      <h1 className="text-3xl font-bold text-center mb-8">Teaching Staff</h1>
+      <div className="overflow-x-auto">
+        <table className="min-w-full">
+          <thead>
+            <tr>
+              <th className="py-2 px-6 bg-gray-100">Sl. No.</th>
+              <th className="py-2 px-6 bg-gray-100">Name</th>
+              <th className="py-2 px-6 bg-gray-100">Qualification Details</th>
+              <th className="py-2 px-6 bg-gray-100">Designation</th>
+              <th className="py-2 px-6 bg-gray-100">Image</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
-      <h1 className="teaching_staff py-3">Non Teaching Staff</h1>
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Sl. No.</th>
-            <th scope="col">Name</th>
-            <th scope="col">Qualification Details</th>
-            <th scope="col">Designation</th>
-            <th scope="col">Image</th>
-          </tr>
-        </thead>
-        <tbody>
-          {nonTeaching.map((data) => (
-            <tr key={data.id}>
-              <th scope="row">{data.id}</th>
-              <td className="faculty__name">{data.name}</td>
-              <td>{data.qualification}</td>
-              <td>{data.designation}</td>
-              <td>
-                <img
-                  style={{ width: "10rem", height: "10rem" }}
-                  src={data.img}
-                  alt=""
-                />
-              </td>
+          </thead>
+          <tbody>
+            {FacultyData.map((data) => (
+              <tr key={data.id}>
+                <td className="py-3 px-6">{data.id}</td>
+                <td className="py-3 px-6">{data.name}</td>
+                <td className="py-3 px-6">{data.qualification}</td>
+                <td className="py-3 px-6">{data.designation}</td>
+                <td className="py-3 px-6">
+                  <img
+                    className="w-20 h-20 rounded-full object-cover"
+                    src={data.img}
+                    alt=""
+                  />
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h1 className="text-3xl font-bold text-center mt-8 mb-8">
+        Non-Teaching Staff
+      </h1>
+      <div className="overflow-x-auto">
+        <table className="min-w-full">
+          <thead>
+            <tr>
+              <th className="py-2 px-6 bg-gray-100">Sl. No.</th>
+              <th className="py-2 px-6 bg-gray-100">Name</th>
+              <th className="py-2 px-6 bg-gray-100">Qualification Details</th>
+              <th className="py-2 px-6 bg-gray-100">Designation</th>
+              <th className="py-2 px-6 bg-gray-100">Image</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {NonTeachingData.map((data) => (
+              <tr key={data.id}>
+                <td className="py-3 px-6">{data.id}</td>
+                <td className="py-3 px-6">{data.name}</td>
+                <td className="py-3 px-6">{data.qualification}</td>
+                <td className="py-3 px-6">{data.designation}</td>
+                <td className="py-3 px-6">
+                  <img
+                    className="w-20 h-20 rounded-full object-cover"
+                    src={data.img}
+                    alt=""
+                  />
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };

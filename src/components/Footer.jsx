@@ -37,6 +37,11 @@ const Footer = () => {
                 Contact Us
               </Link>
             </li>
+            <li className="nav-item">
+              <Link to="/achievements" className="nav-link px-2 text-body-secondary">
+                Achievements
+              </Link>
+            </li>
           </ul>
           <p className="text-center text-body-secondary">© J.C BOSE SENIOR SECONDARY SCHOOL</p>
         </footer>
